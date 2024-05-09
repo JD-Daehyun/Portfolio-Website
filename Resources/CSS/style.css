@@ -1,0 +1,214 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 3rem;
+    font-style: italic;
+}
+a{
+    color: initial;
+     /* Default link color, set as needed */
+    text-decoration: none;
+    /* Optional: removes underline */
+    transition: color 0.3s;
+    /* Smooth transition for color change */
+}
+
+a:hover{
+    color: red;
+}
+
+.navbar {
+    background-color: #333;
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#menu-icon:hover{
+    color: red;
+}
+
+
+
+
+
+section {
+    padding: 20px 40px;
+    /* Adjust padding to reduce vertical space */
+    min-height: 50vh;
+    /* Adjust as needed */
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about div {
+    flex: 1;
+    margin-right: 20px;
+    /* Ensures the text and image container have equal space */
+}
+
+#about div p{
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+#about img {
+    width: 25%;
+    /* Adjust the width as needed */
+    height: auto;
+    aspect-ratio: 1 / 1;
+    /* Maintains a 1:1 aspect ratio */
+    object-fit: cover;
+    box-shadow: 10px 20px 0px rgba(0, 0, 0, 1);
+    /* Adds shadow to the image */
+    border-radius: 5px;
+    /* Rounds the corners of the image */
+    position: relative;
+    /* Necessary for precise positioning if needed */
+}
+
+#projects a{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: aliceblue;
+    color:black;
+    font-size: 1.25rem;
+
+}
+
+#projects a:hover{
+    color: red;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust spacing as needed */
+    align-items: center;
+    padding: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center aligns the icon and text vertically */
+    font-size: 30px;
+    /* Icon size, adjust as needed */
+}
+
+.skill i {
+    margin-bottom: 8px;
+    /* Space between icon and text */
+}
+
+.skill p {
+    margin: 0;
+    /* Remove default paragraph margins */
+    text-align: center;
+}
+
+#contact p{
+    font-size: 2rem;
+}
+
+#follow a{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Adjust spacing as needed */
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+            display: none;
+            width: 120px;
+            height: 160px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 65px;
+            right: 10px;
+            background: rgb(27, 22, 22);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    .nav-links a{
+        display:block;
+        color:white;
+
+
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    #about {
+        flex-direction: column;
+    }
+
+    #about img {
+        width: 80%;
+        /* Larger size for smaller screens */
+        margin: 0 auto;
+        /* Centers the image when the layout is vertical */
+    }
+    #about div{
+        margin-bottom: 10px;
+    }
+    #about div p{
+    line-height: 1.25;
+    font-size: 1rem;
+    }
+    .skill{
+        font-size: 20px;
+    }
+}
